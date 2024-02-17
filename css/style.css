@@ -1,0 +1,12 @@
+
+.heading{
+    text-align: center;
+    background: linear-gradient(350deg, red, green, blue);
+    color: white;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.loginDesing{
+    margin-top: 7rem;
+}
