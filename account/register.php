@@ -29,13 +29,13 @@ top: 13px;
         <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
-            <form>
+            <form action="insert_register.php" method="post">
 
               <div class="row">
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-control form-control-lg" />
+                    <input type="text" name="full_name" id="firstName" class="form-control form-control-lg" />
                     <label class="form-label" for="firstName">Full Name</label>
                   </div>
 
@@ -43,7 +43,7 @@ top: 13px;
                 <div class="col-md-6 mb-4">
 
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-control form-control-lg" />
+                    <input type="text" id="lastName" name="user_name" class="form-control form-control-lg" />
                     <label class="form-label" for="lastName">User Name</label>
                   </div>
 
@@ -54,14 +54,14 @@ top: 13px;
                 <div class="col-md-6 mb-4 d-flex align-items-center">
 
                   <div class="form-outline datepicker w-100">
-                    <input type="password" class="form-control form-control-lg" id="birthdayDate" />
+                    <input type="password" name="password" class="form-control form-control-lg" id="birthdayDate" />
                     <label for="birthdayDate" class="form-label">Password</label>
                   </div>
 
                 </div>
                 <div class="col-md-6 mb-4">
                 <div class="form-outline">
-                    <input type="email" id="emailAddress" class="form-control form-control-lg" />
+                    <input type="email" name="email" id="emailAddress" class="form-control form-control-lg" />
                     <label class="form-label" for="emailAddress">Email</label>
                   </div>
                 </div>
@@ -70,13 +70,13 @@ top: 13px;
               <div class="row">
                 <div class="col-md-6 mb-4 pb-2">
                   <div class="form-outline">
-                    <input type="number" id="phoneNumber" class="form-control form-control-lg" />
+                    <input type="number" name="number" id="phoneNumber" class="form-control form-control-lg" />
                     <label class="form-label" for="phoneNumber">Phone Number</label>
                   </div>
                 </div>
                 <div class="col-md-6 mb-4 pb-2">
                   <div class="form-outline">
-                    <select class="select form-control-lg">
+                    <select name="gender" class="select form-control-lg">
                       <option value="0" selected disabled>Choose option</option>
                       <option value="male">Male</option>
                       <option value="female">Female</option>
@@ -89,7 +89,7 @@ top: 13px;
 
               <div class="row">
                 <div class="col-12"> 
-                  <select class="select form-control-lg">
+                  <select name="roll" class="select form-control-lg">
                     <option value="1" selected disabled>Choose option</option>
                     <option value="2">Editor</option>
                     <option value="3">Viewer</option>
@@ -99,7 +99,7 @@ top: 13px;
               </div>
 
               <div class="mt-4 pt-2">
-                <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                <input class="btn btn-primary btn-lg" type="submit" name="sumbit" value="Submit" />
               </div>
 
             </form>
